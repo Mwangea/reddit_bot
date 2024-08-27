@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from reddit_bot.app.models import Base, Subreddit, Post, Proxy
+from app.models import Base, Subreddit, Post, Proxy
 from config import DATABASE_URL
 
 engine = create_engine(DATABASE_URL)

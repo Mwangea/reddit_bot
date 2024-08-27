@@ -1,5 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from app.utils import add_subreddit, add_post, add_proxy
 from datetime import datetime
+
 
 def main():
     while True:
